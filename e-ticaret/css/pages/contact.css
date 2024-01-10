@@ -1,0 +1,95 @@
+.contact-titles {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 20px 0;
+}
+
+.contact-titles h4 {
+  font-size: 15px;
+  color: red;
+  font-weight: 500;
+}
+
+.contact-titles h2 {
+  font-size: 35px;
+}
+.contact-titles p {
+  font-size: 12pxpx;
+  margin-bottom: 10px;
+}
+
+.contact-bottom .contact-elements {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.contact-bottom .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-bottom .contact-form > div {
+    display: flex;
+    flex-direction: column;
+    flex-basis:calc(50% - 10px) ;/* yukarda gap verince taşıyorlar o yüzden hesap yapı cıkardım */
+    gap: 10px;
+  }
+
+  .contact-bottom .contact-form > div:nth-child(3),
+  .contact-bottom .contact-form > div:nth-child(4){/* 3 ve 4. divleri genişleterek diğerlerini aşağı düşürdük */
+   flex-basis: 100%;
+  }
+  
+ .contact-form button{
+    background-color: black;
+    color: white;
+    height:40px;
+  }
+
+  .contact-elements   .contact-info{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+  .contact-info  .contact-info-item{
+    font-size: 14px;
+    
+  }
+
+  .contact-info-item .contact-info-texts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-info-item .contact-street {
+    margin: 15px 0;
+  }
+  
+  .contact-info-item .contact-date {
+    margin-top: 10px;
+  }
+
+  /* responsive */
+@media (max-width: 768px) {
+    .contact .contact-titles {
+      width: 100%;
+    }
+  
+    .contact-elements {
+      flex-direction: column;
+      gap: 50px !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-form {
+      flex-direction: column;
+    }
+  }

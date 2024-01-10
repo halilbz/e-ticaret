@@ -1,0 +1,38 @@
+.campaign-single {
+    background-image: url(../../img/single-campaign.png);
+    background-attachment: fixed;/* Görseli sabitler scrol ile kaydığında*/
+    
+    background-size: cover;
+    padding: 140px 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campaign-single .campaign-wrapper{
+   
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.campaign-single .campaign-wrapper h2{
+   font-size: 25px;
+   
+}
+
+.campaign-single .campaign-wrapper strong{
+    font-size: 50px;
+    font-weight: 600;
+    
+ }
+
+ .campaign-single .campaign-wrapper span{
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+ }

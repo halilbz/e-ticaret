@@ -1,0 +1,51 @@
+.category {
+    margin: 40px 0;
+}
+
+.category .category-heading p {
+    color: #dee0ea;
+}
+
+.category .category-products {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;/* sıkıştığında lata atsın diye */
+
+
+}
+
+.category-products .product-item {
+    background-color: #f5f5f5;
+    flex: 1;/* sıkıştığında lata atsın diye */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+
+.category-products .product-item a {
+    display: inline-block;
+    /* padding yemiyor ondan verdik */
+    padding: 10px;
+
+}
+
+.category-products .product-item img {
+    width: 100%;
+    transition: transform ease .2s;
+}
+
+.category-products .product-item img:hover {
+    transform: scale(1.1);
+}
+
+.category-products .product-item p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px) {}
